@@ -10,7 +10,6 @@ def numbers(rand_number):
 first_number = int(input('Введите число:'))
 if 3 <= first_number <= 20:
     result_pairs = numbers(first_number)
-    # Объединяем пары в строку для вывода
     password = ''.join([f"{i}{j}" for i, j in result_pairs])
     print(f'Для числа {first_number} подходят пароли: {password}')
 else:
